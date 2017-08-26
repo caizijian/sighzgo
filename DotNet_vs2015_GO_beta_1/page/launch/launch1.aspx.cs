@@ -19,9 +19,7 @@ namespace WebApplication1
 
         protected void Button1_Click(object sender, System.EventArgs e)
         {
-            string url;
-            url = "launch2.aspx" ;
-            Response.Redirect(url);
+            Response.Redirect("launch2.aspx");
         }
     }
 }

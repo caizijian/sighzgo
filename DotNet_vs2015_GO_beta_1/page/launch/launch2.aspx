@@ -9,6 +9,7 @@
     <style type="text/css">
         .auto-style1 {
             height: 643px;
+            width: 886px;
         }
         .auto-style2 {
             width: 100%;
@@ -37,14 +38,14 @@
         }
         .auto-style9 {
             height: 61px;
-            width: 580px;
+            width: 680px;
         }
         .auto-style10 {
             height: 366px;
-            width: 580px;
+            width: 680px;
         }
         .auto-style11 {
-            width: 580px;
+            width: 680px;
         }
         .auto-style12 {
             width: 127%;
@@ -108,9 +109,9 @@
                         <tr>
                             <td class="auto-style22">
                                 <asp:Label ID="Label1" runat="server" ForeColor="Red" Text="*"></asp:Label>
-                                主办方名称：</td>
+                                公司名称：</td>
                             <td class="auto-style23">
-                                &nbsp;<asp:DropDownList ID="bind_Province" CssClass="styled" runat="server" AutoPostBack="True" onselectedindexchanged="bind_Province_SelectedIndexChanged" Height="24px" Width="77px"> 
+                                <asp:DropDownList ID="bind_Province" CssClass="styled" runat="server" AutoPostBack="True" onselectedindexchanged="bind_Province_SelectedIndexChanged" Height="24px" Width="77px"> 
                                 </asp:DropDownList>&nbsp;省 <asp:DropDownList ID="bind_City" CssClass="styled" runat="server" AutoPostBack="True" onselectedindexchanged="bind_City_SelectedIndexChanged" Height="24px" Width="84px">
                                 </asp:DropDownList>&nbsp;市 <asp:DropDownList ID="Bind_Area" CssClass="styled" runat="server" Height="24px" Width="83px" AutoPostBack="True">
                                 </asp:DropDownList>&nbsp;区
@@ -119,7 +120,16 @@
                       <tr>
                             <td class="auto-style13">&nbsp;</td>
                             <td>
-                                <asp:TextBox ID="managername" runat="server" Height="20px" Width="222px" Placeholder="公司/社会团体/学生社团名称等"></asp:TextBox>
+                                <asp:TextBox ID="companyname" runat="server" Height="20px" Width="222px" Placeholder="公司/社会团体/学生社团名称等"></asp:TextBox>
+                            </td>
+                        </tr>
+                         <tr>
+                            <td class="auto-style13">
+                                  <asp:Label ID="Label5" runat="server" ForeColor="Red" Text="*"></asp:Label>
+                                负责人姓名：
+                            </td>
+                            <td>
+                                <asp:TextBox ID="managername" runat="server" Height="20px" Width="222px" ></asp:TextBox>
                             </td>
                         </tr>
                         <tr>
@@ -153,7 +163,9 @@
                                 <asp:Label ID="Label3" runat="server" ForeColor="Red" Text="*"></asp:Label>
                                 联系电话：</td>
                             <td class="auto-style17">
-                                <asp:TextBox ID="telephone" runat="server" Height="20px" Width="222px" ></asp:TextBox>
+                                <asp:TextBox ID="telephone" runat="server" Height="20px" Width="200px" OnTextChanged="telephone_TextChanged" MaxLength="11" ></asp:TextBox>
+                            &nbsp;
+                                <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="telephone" ErrorMessage="电话错误" ValidationExpression="^[1]\d{10}| |^\+?[1-9][0-9]*$| |^(0[0-9]{2,3}\-)?([2-9][0-9]{6,7})+(\-[0-9]{1,4})?$"></asp:RegularExpressionValidator>
                             </td>
                         </tr>
                         <tr>
@@ -161,13 +173,13 @@
                                 <asp:Label ID="Label4" runat="server" ForeColor="Red" Text="*"></asp:Label>
                                 邮箱：</td>
                             <td class="auto-style19">
-                                <asp:TextBox ID="email" runat="server" Height="20px" Width="222px" OnTextChanged="email_TextChanged" ></asp:TextBox>
+                                <asp:TextBox ID="email" runat="server" Height="20px" Width="202px" OnTextChanged="email_TextChanged" TextMode="Email" ></asp:TextBox>
                             </td>
                         </tr>
                         <tr>
                             <td class="auto-style20">微信号：</td>
                             <td class="auto-style21">
-                                <asp:TextBox ID="wechat" runat="server" Height="20px" Width="222px" ></asp:TextBox>
+                                <asp:TextBox ID="wechat" runat="server" Height="20px" Width="201px" ></asp:TextBox>
                             </td>
                         </tr>
                         <tr>

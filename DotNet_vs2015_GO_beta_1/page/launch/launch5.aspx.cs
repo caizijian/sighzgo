@@ -11,6 +11,11 @@ namespace WebApplication1
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["uid"] == null)
+            {
+                Response.Redirect("../system/login.aspx", false);
+                return;
+            }
 
         }
         protected void Button1_Click(object sender, System.EventArgs e)
