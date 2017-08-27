@@ -82,15 +82,6 @@
     <Content Include="css\detail.css" />
     <Content Include="css\eventmanagement.css" />
     <Content Include="css\gameall.css" />
-    <Content Include="img\system\home\Game_poster\poster1.png" />
-    <Content Include="img\system\home\Game_poster\poster2.png" />
-    <Content Include="img\system\home\Game_poster\poster3.png" />
-    <Content Include="img\system\home\righticon.png" />
-    <Content Include="img\system\home\lefticon.png" />
-    <Content Include="css\head&amp;foot.css" />
-    <Content Include="css\Home.css" />
-    <Content Include="dll\FredCK.FCKeditorV2.dll" />
-    <Content Include="dll\MySql.Data.dll" />
     <Content Include="fckeditor\editor\css\behaviors\disablehandles.htc" />
     <Content Include="fckeditor\editor\css\behaviors\showtableborders.htc" />
     <Content Include="fckeditor\editor\css\fck_editorarea.css" />
@@ -401,7 +392,39 @@
     <Content Include="fckeditor\fckeditor.js" />
     <Content Include="fckeditor\fckstyles.xml" />
     <Content Include="fckeditor\fcktemplates.xml" />
+    <Content Include="img\system\home\Game_poster\poster1.png" />
+    <Content Include="img\system\home\Game_poster\poster2.png" />
+    <Content Include="img\system\home\Game_poster\poster3.png" />
+    <Content Include="img\system\home\righticon.png" />
+    <Content Include="img\system\home\lefticon.png" />
+    <Content Include="css\head&amp;foot.css" />
+    <Content Include="css\Home.css" />
+    <Content Include="dll\FredCK.FCKeditorV2.dll" />
+    <Content Include="dll\MySql.Data.dll" />
     <Content Include="img\user\137.jpg" />
+    <Content Include="My97DatePicker\calendar.js" />
+    <Content Include="My97DatePicker\lang\en.js" />
+    <Content Include="My97DatePicker\lang\zh-cn.js" />
+    <Content Include="My97DatePicker\lang\zh-tw.js" />
+    <Content Include="My97DatePicker\skin\datePicker.gif" />
+    <Content Include="My97DatePicker\skin\default\datepicker.css" />
+    <Content Include="My97DatePicker\skin\default\img.gif" />
+    <Content Include="My97DatePicker\skin\WdatePicker.css" />
+    <Content Include="My97DatePicker\skin\whyGreen\bg.jpg" />
+    <Content Include="My97DatePicker\skin\whyGreen\datepicker.css" />
+    <Content Include="My97DatePicker\skin\whyGreen\img.gif" />
+    <Content Include="My97DatePicker\WdatePicker.js" />
+    <Content Include="My97DatePicker\开发包\lang\en.js" />
+    <Content Include="My97DatePicker\开发包\lang\zh-cn.js" />
+    <Content Include="My97DatePicker\开发包\lang\zh-tw.js" />
+    <Content Include="My97DatePicker\开发包\readme.txt" />
+    <Content Include="My97DatePicker\开发包\skin\datePicker.gif" />
+    <Content Include="My97DatePicker\开发包\skin\default\datepicker.css" />
+    <Content Include="My97DatePicker\开发包\skin\default\img.gif" />
+    <Content Include="My97DatePicker\开发包\skin\WdatePicker.css" />
+    <Content Include="My97DatePicker\开发包\skin\whyGreen\bg.jpg" />
+    <Content Include="My97DatePicker\开发包\skin\whyGreen\datepicker.css" />
+    <Content Include="My97DatePicker\开发包\skin\whyGreen\img.gif" />
     <Content Include="page\competition\testbeauty.aspx" />
     <Content Include="page\competition\Game_details.aspx" />
     <Content Include="page\competition\gameall.aspx" />
@@ -430,10 +453,10 @@
     <Content Include="Service References\ServiceReference1\DotNet_vs2015_GO_beta_1.ServiceReference1.SendMailMsgResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
+    <Fakes Include="Fakes\FredCK.FCKeditorV2.fakes" />
     <Content Include="fckeditor\editor\dialog\fck_spellerpages\spellerpages\server-scripts\spellchecker.cfm" />
     <Content Include="fckeditor\editor\dialog\fck_spellerpages\spellerpages\server-scripts\spellchecker.php" />
     <Content Include="fckeditor\editor\dialog\fck_spellerpages\spellerpages\server-scripts\spellchecker.pl" />
-    <Fakes Include="Fakes\FredCK.FCKeditorV2.fakes" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -669,6 +692,7 @@
     </WebReferenceUrl>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="bin\" />
     <Folder Include="file\competition\" />
     <Folder Include="img\competition\" />
     <Folder Include="img\head\" />
