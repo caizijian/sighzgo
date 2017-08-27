@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="shangchuang.aspx.cs" Inherits="DotNet_vs2015_GO_beta_1.shangchuang" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="upload.aspx.cs" Inherits="DotNet_vs2015_GO_beta_1.shangchuang" %>
 
 <!DOCTYPE html>
 

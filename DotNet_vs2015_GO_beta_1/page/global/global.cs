@@ -7,63 +7,53 @@ using System.Security.Cryptography;
 using System.Web;
 
 
-public class global{
+public class global
+{
 
     static global()
     {
-      
+
     }
 
-
- 
     public static int Login(string username, string password)
     {//输入帐号和密码，返回ID
-        string sql= "select id from user where username=?username and password=?password";
+        string sql = "select id from user where username=?username and password=?password";
         MySqlParameter[] p ={
     new MySqlParameter("?username",username),
     new MySqlParameter("?password",password)
                              };
-
         if (mysqlHelp.ExecuteScalar(sql, p) == null) return 0;
-        else return((int)mysqlHelp.ExecuteScalar(sql, p));
-
+        else return ((int)mysqlHelp.ExecuteScalar(sql, p));
     }
 
-
-
     public static int AddUser(string username, string password, string type)
-   {//新增用户
-    string permission = " 1";
-    string date = DateTime.Now.ToString("yyyy-MM-dd");
-
-    string sql = "select username from user where username=?username";
-    new MySqlParameter("?username", username);
-    if (mysqlHelp.ExecuteNonQuery(sql) != 0) return -1;
-    else
-    {
-        sql = "insert into user (username,password,type,permission,signupdate) values (?username,?password,?type,?permission,?signupdate";
-        MySqlParameter[] p ={
+    {//新增用户
+        string permission = " 1";
+        string date = DateTime.Now.ToString("yyyy-MM-dd");
+        string sql = "select username from user where username=?username";
+        new MySqlParameter("?username", username);
+        if (mysqlHelp.ExecuteNonQuery(sql) != 0) return -1;
+        else
+        {
+            sql = "insert into user (username,password,type,permission,signupdate) values (?username,?password,?type,?permission,?signupdate)";
+            MySqlParameter[] p ={
     new MySqlParameter("?username",username),
     new MySqlParameter("?password",password),
     new MySqlParameter("?type", type),
     new MySqlParameter("?permission", permission),
     new MySqlParameter("?signupdate", date)
                              };
-        return (mysqlHelp.ExecuteNonQuery(sql, p));
-
+            return (mysqlHelp.ExecuteNonQuery(sql, p));
+        }
     }
-   }
 
-
-   
     public static MySqlDataReader ParticipantInfo(int id)
     {//通过id找到参赛者个人详细信息
         string sql = "select * from participant where id=?id";
         MySqlParameter[] p ={
         new MySqlParameter("?id",id) };
-        return mysqlHelp.ExecuteReader(sql,p);
+        return mysqlHelp.ExecuteReader(sql, p);
     }
-
 
     public static int FindIdByUsername(string username)
     {
@@ -72,7 +62,7 @@ public class global{
         string sql = "select id from user where username=?username";
         MySqlParameter[] p ={
         new MySqlParameter("?username",username) };
-       if(mysqlHelp.ExecuteScalar(sql, p) == null) return -1;
+        if (mysqlHelp.ExecuteScalar(sql, p) == null) return -1;
         return (int)mysqlHelp.ExecuteScalar(sql, p);
     }
 
@@ -85,8 +75,6 @@ public class global{
         return (mysqlHelp.ExecuteDataTable(sql, p));
     }
 
-   
-
     public static MySqlDataReader CompetitionInfo(String id)
     {
         //显示比赛详情
@@ -96,6 +84,7 @@ public class global{
         new MySqlParameter("?id",id) };
         return mysqlHelp.ExecuteReader(sql, p);
     }
+
     public static MySqlDataReader com_hostInfo(String competition_id)
     {//通过赛事寻找主办方
      //加判断输入+是否存在
@@ -116,11 +105,11 @@ public class global{
 
     public static int isParticipantInfoExist(int id)
     {//显示参赛者信息    
-         string sql = "select * from participant where id=?id";
-         MySqlParameter[] p ={
+        string sql = "select * from participant where id=?id";
+        MySqlParameter[] p ={
          new MySqlParameter("?id",id) };
-        if (mysqlHelp.ExecuteScalar(sql,p) == null) return 0;
-        else return ((int)mysqlHelp.ExecuteScalar(sql,p));
+        if (mysqlHelp.ExecuteScalar(sql, p) == null) return 0;
+        else return ((int)mysqlHelp.ExecuteScalar(sql, p));
     }
 
     private static string CreateId()
@@ -132,6 +121,7 @@ public class global{
         }
         return string.Format("{0:x}", i - DateTime.Now.Ticks);
     }
+
     public static string CreateTeam()
     {//创建队伍
         string id = CreateId();
@@ -139,11 +129,11 @@ public class global{
         MySqlParameter[] p ={
                     new MySqlParameter("?id",id)
                    };
-        if (mysqlHelp.ExecuteNonQuery(sql,p) ==-1) return "-1";
+        if (mysqlHelp.ExecuteNonQuery(sql, p) == -1) return "-1";
         return id;
     }
 
-    public static int JionTeam(string team_id,int paticipant_id)
+    public static int JionTeam(string team_id, int paticipant_id)
     {//参与队伍        
         string date = DateTime.Now.ToString();
         string sql = "insert underling (participant_id,team_id,jointime)values(?participant_id,?team_id,?jointime)";
@@ -159,7 +149,7 @@ public class global{
     {//展示队伍成员
         string sql = "select * from participant where id in (select participant_id from underling where team_id=?team_id)";
         MySqlParameter[] p ={
-                    new MySqlParameter("?team_id",team_id),                 
+                    new MySqlParameter("?team_id",team_id),
                    };
         return mysqlHelp.ExecuteDataTable(sql, p);
     }
@@ -174,15 +164,15 @@ public class global{
             new MySqlParameter("?team_id",team_id),
             new MySqlParameter ("?signupdate",signupdate)
         };
-        if (mysqlHelp.ExecuteNonQuery(sql,p) == 0) return -1;
+        if (mysqlHelp.ExecuteNonQuery(sql, p) == 0) return -1;
         return 1;
     }
 
-    public static int Join(int id, string realname, string province, string city, string school, string major, string grade, string number, string email, string telephone, string wechat, string sex,string teachername,string teacherinfo,string competition_id)
-    { 
-               //更新个人资料
-                string sql2 = "update participant set realname=?realname,province=?province,city=?city,school=?school,major=?major,grade=?grade,number=?number,email=?email,telephone=?telephone,wechat=?wechat,sex=?sex where id=?id";
-                MySqlParameter[] p ={
+    public static int Join(int id, string realname, string province, string city, string school, string major, string grade, string number, string email, string telephone, string wechat, string sex, string teachername, string teacherinfo, string competition_id)
+    {
+        //更新个人资料
+        string sql2 = "update participant set realname=?realname,province=?province,city=?city,school=?school,major=?major,grade=?grade,number=?number,email=?email,telephone=?telephone,wechat=?wechat,sex=?sex where id=?id";
+        MySqlParameter[] p ={
                 new MySqlParameter("?id",id),
                 new MySqlParameter("?realname",realname),
                 new MySqlParameter("?province", province),
@@ -196,7 +186,7 @@ public class global{
                 new MySqlParameter("?wechat", wechat),
                 new MySqlParameter("?sex", sex)
                                     };
-            if (mysqlHelp.ExecuteNonQuery(sql2, p) == -1) return -1;
+        if (mysqlHelp.ExecuteNonQuery(sql2, p) == -1) return -1;
 
         //创建队伍，个人参赛视为队伍里只有他一个人
         string team_id = CreateId();
@@ -206,17 +196,15 @@ public class global{
                     new MySqlParameter("?id",team_id),
                     new MySqlParameter("?teachername",teachername),
                     new MySqlParameter("?teacherinfo", teacherinfo) };
-        if (mysqlHelp.ExecuteNonQuery(sql, p3) == 0) return -1;
-
+        if (mysqlHelp.ExecuteNonQuery(sql, p3) == -1) return -1;
         //加入队伍
-        if (JionTeam(team_id,id)==-1) return -1;
+        if (JionTeam(team_id, id) == -1) return -1;
         //参与比赛
-        return (JoinCompetition(competition_id,team_id));
- 
-            }
+        return (JoinCompetition(competition_id, team_id));
 
+    }
 
-    public static int UpdateTeam(string id,string teamname,string teaminfo,string teachername,string teacherinfo)
+    public static int UpdateTeam(string id, string teamname, string teaminfo, string teachername, string teacherinfo)
     {   //更新队伍信息  
         string sql = "update team set teamname=?teamname,teaminfo=?teaminfo,teachername=?teachername,teacherinfo=?teacherinfo where id=?id";
         MySqlParameter[] p =
@@ -227,19 +215,17 @@ public class global{
             new MySqlParameter ("?teacherinfo",teacherinfo),
             new MySqlParameter ("?id",id)
         };
-       return(mysqlHelp.ExecuteNonQuery(sql, p)) ;
+        return (mysqlHelp.ExecuteNonQuery(sql, p));
     }
 
     public static DataTable ShowAllCompetition()
     {
         string sql = "select * from competition";
-        return(mysqlHelp.ExecuteDataTable(sql));
-
-
+        return (mysqlHelp.ExecuteDataTable(sql));
     }
 
 
-    public static int isTeamnameExist(string competition_id,string teamname)
+    public static int isTeamnameExist(string competition_id, string teamname)
     {//显示参赛者信息    
         string sql = "SELECT * FROM competition,team,takepartin WHERE competition.id=takepartin.competition_id AND team.id=takepartin.team_id AND teamname=?teamname AND competition.id=?competition.id";
         MySqlParameter[] p ={
@@ -250,7 +236,41 @@ public class global{
         return 1;
     }
 
+    public static DateTime GetDateTime()
+    {
+        return DateTime.Now;
+    }
 
+    public static int AddNotice(string competition_id, string content)
+    {
+        string id = CreateId();
+        DateTime date = GetDateTime();
+        string sql = "insert into notice (id,competition_id,content,date) values (?id,?competition_id,?content,?date)";
+        MySqlParameter[] p ={
+         new MySqlParameter("?id",id),
+         new MySqlParameter("?competition_id",competition_id),
+         new MySqlParameter("?content",content),
+         new MySqlParameter("?date",date),
+        };
+        if (mysqlHelp.ExecuteNonQuery(sql, p) == -1) return -1;
+        sql = "INSERT INTO noticeread(notice_id, participant_id)SELECT notice.id, underling.`participant_id`FROM notice, takepartin, underling WHERE takepartin.`competition_id`= notice.`competition_id` AND underling.`team_id`=takepartin.`team_id` AND notice.id=?notice.id";
+        MySqlParameter[] p1 ={
+         new MySqlParameter("?notice.id",id) };
+        if (mysqlHelp.ExecuteNonQuery(sql, p1) == -1) return -1;
+        return 1;
+    }
+
+    public static Int64 NewNoticeNumber(int participant_id)
+    {
+        string sql = "select count(*) from noticeread where participant_id=?participant_id and noticeread.`read`=0";
+        MySqlParameter[] p ={
+         new MySqlParameter("?participant_id",participant_id)
+        };
+
+        if (mysqlHelp.ExecuteScalar(sql, p) == null) return 0;
+        return (Int64)mysqlHelp.ExecuteScalar(sql, p);
+
+    }
 
 
 

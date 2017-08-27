@@ -43,14 +43,18 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="FredCK.FCKeditorV2">
-      <HintPath>..\..\..\编辑器\FCKeditor.Net_2.6.3\bin\Release\2.0\FredCK.FCKeditorV2.dll</HintPath>
+    <Reference Include="FredCK.FCKeditorV2, Version=2.6.3.22451, Culture=neutral, PublicKeyToken=4f86767c9b519a06, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dll\FredCK.FCKeditorV2.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
     <Reference Include="MySql.Data, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>dll\MySql.Data.dll</HintPath>
@@ -78,6 +82,15 @@
     <Content Include="css\detail.css" />
     <Content Include="css\eventmanagement.css" />
     <Content Include="css\gameall.css" />
+    <Content Include="img\system\home\Game_poster\poster1.png" />
+    <Content Include="img\system\home\Game_poster\poster2.png" />
+    <Content Include="img\system\home\Game_poster\poster3.png" />
+    <Content Include="img\system\home\righticon.png" />
+    <Content Include="img\system\home\lefticon.png" />
+    <Content Include="css\head&amp;foot.css" />
+    <Content Include="css\Home.css" />
+    <Content Include="dll\FredCK.FCKeditorV2.dll" />
+    <Content Include="dll\MySql.Data.dll" />
     <Content Include="fckeditor\editor\css\behaviors\disablehandles.htc" />
     <Content Include="fckeditor\editor\css\behaviors\showtableborders.htc" />
     <Content Include="fckeditor\editor\css\fck_editorarea.css" />
@@ -389,6 +402,7 @@
     <Content Include="fckeditor\fckstyles.xml" />
     <Content Include="fckeditor\fcktemplates.xml" />
     <Content Include="img\user\137.jpg" />
+    <Content Include="page\competition\testbeauty.aspx" />
     <Content Include="page\competition\Game_details.aspx" />
     <Content Include="page\competition\gameall.aspx" />
     <Content Include="images\launch.jpg" />
@@ -400,6 +414,7 @@
     <Content Include="js\jquery-migrate-1.4.1.js" />
     <Content Include="js\jquery-yys-slider.js" />
     <Content Include="js\tab.js" />
+    <Content Include="page\competition\uglyallgame.aspx" />
     <Content Include="page\competition\upload.aspx" />
     <Content Include="page\launch\launch1.aspx" />
     <Content Include="page\launch\launch2.aspx" />
@@ -407,13 +422,18 @@
     <Content Include="page\launch\launch4.aspx" />
     <Content Include="page\launch\launch5.aspx" />
     <Content Include="packages.config" />
-    <Content Include="page\competition\Jion_team.aspx" />
+    <Content Include="page\competition\Join_team.aspx" />
+    <Content Include="page\manage\addnotice.aspx" />
+    <Content Include="page\messagebox\newnotice.aspx" />
+    <Content Include="page\my\edit_host.aspx" />
+    <Content Include="page\my\readonly_host.aspx" />
     <Content Include="Service References\ServiceReference1\DotNet_vs2015_GO_beta_1.ServiceReference1.SendMailMsgResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
     <Content Include="fckeditor\editor\dialog\fck_spellerpages\spellerpages\server-scripts\spellchecker.cfm" />
     <Content Include="fckeditor\editor\dialog\fck_spellerpages\spellerpages\server-scripts\spellchecker.php" />
     <Content Include="fckeditor\editor\dialog\fck_spellerpages\spellerpages\server-scripts\spellchecker.pl" />
+    <Fakes Include="Fakes\FredCK.FCKeditorV2.fakes" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -433,11 +453,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="css\SignUp.css" />
-    <Content Include="images\information.png" />
-    <Content Include="images\logo.jpg" />
-    <Content Include="images\me.png" />
-    <Content Include="images\search.jpg" />
-    <Content Include="page\competition\Jion_single.aspx" />
+    <Content Include="img\system\home\information.png" />
+    <Content Include="img\system\home\logo.jpg" />
+    <Content Include="img\system\home\me.png" />
+    <Content Include="img\system\home\search.jpg" />
+    <Content Include="page\competition\Join_single.aspx" />
     <None Include="Service References\ServiceReference1\EamilService.disco" />
     <None Include="Service References\ServiceReference1\configuration91.svcinfo" />
     <None Include="Service References\ServiceReference1\configuration.svcinfo" />
@@ -447,16 +467,22 @@
     </None>
     <Content Include="page\manage\Control.aspx" />
     <Content Include="page\global\EamilService.asmx" />
-    <Content Include="page\my\edit.aspx" />
     <Content Include="page\my\emailcheck.aspx" />
     <Content Include="page\login.aspx" />
-    <Content Include="page\my\readonly.aspx" />
     <Content Include="page\signup.aspx" />
     <Content Include="page\manage\test.aspx" />
     <None Include="Web References\localhost\EamilService.disco" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="page\global\global.cs" />
+    <Compile Include="page\competition\testbeauty.aspx.cs">
+      <DependentUpon>testbeauty.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\competition\testbeauty.aspx.designer.cs">
+      <DependentUpon>testbeauty.aspx</DependentUpon>
+    </Compile>
     <Compile Include="page\competition\Game_details.aspx.cs">
       <DependentUpon>Game_details.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -470,6 +496,13 @@
     </Compile>
     <Compile Include="page\competition\gameall.aspx.designer.cs">
       <DependentUpon>gameall.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\competition\uglyallgame.aspx.cs">
+      <DependentUpon>uglyallgame.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\competition\uglyallgame.aspx.designer.cs">
+      <DependentUpon>uglyallgame.aspx</DependentUpon>
     </Compile>
     <Compile Include="page\competition\upload.aspx.cs">
       <DependentUpon>upload.aspx</DependentUpon>
@@ -513,21 +546,48 @@
     <Compile Include="page\launch\launch5.aspx.designer.cs">
       <DependentUpon>launch5.aspx</DependentUpon>
     </Compile>
-    <Compile Include="page\global\global.cs" />
     <Compile Include="page\global\mysqlHelp.cs" />
-    <Compile Include="page\competition\Jion_single.aspx.cs">
-      <DependentUpon>Jion_single.aspx</DependentUpon>
+    <Compile Include="page\competition\Join_single.aspx.cs">
+      <DependentUpon>Join_single.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="page\competition\Jion_single.aspx.designer.cs">
-      <DependentUpon>Jion_single.aspx</DependentUpon>
+    <Compile Include="page\competition\Join_single.aspx.designer.cs">
+      <DependentUpon>Join_single.aspx</DependentUpon>
     </Compile>
-    <Compile Include="page\competition\Jion_team.aspx.cs">
-      <DependentUpon>Jion_team.aspx</DependentUpon>
+    <Compile Include="page\competition\Join_team.aspx.cs">
+      <DependentUpon>Join_team.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="page\competition\Jion_team.aspx.designer.cs">
-      <DependentUpon>Jion_team.aspx</DependentUpon>
+    <Compile Include="page\competition\Join_team.aspx.designer.cs">
+      <DependentUpon>Join_team.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\manage\addnotice.aspx.cs">
+      <DependentUpon>addnotice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\manage\addnotice.aspx.designer.cs">
+      <DependentUpon>addnotice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\messagebox\newnotice.aspx.cs">
+      <DependentUpon>newnotice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\messagebox\newnotice.aspx.designer.cs">
+      <DependentUpon>newnotice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\my\edit_host.aspx.cs">
+      <DependentUpon>edit_host.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\my\edit_host.aspx.designer.cs">
+      <DependentUpon>edit_host.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\my\readonly_host.aspx.cs">
+      <DependentUpon>readonly_host.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\my\readonly_host.aspx.designer.cs">
+      <DependentUpon>readonly_host.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
@@ -551,13 +611,6 @@
       <DependentUpon>EamilService.asmx</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="page\my\edit.aspx.cs">
-      <DependentUpon>edit.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="page\my\edit.aspx.designer.cs">
-      <DependentUpon>edit.aspx</DependentUpon>
-    </Compile>
     <Compile Include="page\my\EDITOR.cs" />
     <Compile Include="page\my\emailcheck.aspx.cs">
       <DependentUpon>emailcheck.aspx</DependentUpon>
@@ -572,13 +625,6 @@
     </Compile>
     <Compile Include="page\login.aspx.designer.cs">
       <DependentUpon>login.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="page\my\readonly.aspx.cs">
-      <DependentUpon>readonly.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="page\my\readonly.aspx.designer.cs">
-      <DependentUpon>readonly.aspx</DependentUpon>
     </Compile>
     <Compile Include="page\signup.aspx.cs">
       <DependentUpon>signup.aspx</DependentUpon>
@@ -626,7 +672,6 @@
     <Folder Include="file\competition\" />
     <Folder Include="img\competition\" />
     <Folder Include="img\head\" />
-    <Folder Include="img\system\" />
     <Folder Include="img\user\host\" />
     <Folder Include="img\user\participant\" />
   </ItemGroup>
