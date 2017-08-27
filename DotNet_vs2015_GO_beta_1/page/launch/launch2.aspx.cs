@@ -70,7 +70,7 @@ namespace WebApplication1
         {
             if (Session["uid"] == null)
             {
-                Response.Redirect("../system/login.aspx", false);
+                Response.Redirect("../login.aspx", false);
                 return;
             }
             if (!IsPostBack)
@@ -175,9 +175,6 @@ namespace WebApplication1
         {
             if (check(companyname.Text, managername.Text,telephone.Text,email.Text))
             {
-               
-               
-                //  string str = "Server=localhost;User ID=root;Password=1548936563ry?;Database=launch;CharSet=utf8;";
                 string str = "Server=10.10.11.108;User ID=root;Password=GNzhengxun11;Database=sighzgo;CharSet=utf8;";
                         MySqlConnection con = new MySqlConnection(str);//实例化链接
                         con.Open();   //开启连接   
@@ -237,7 +234,9 @@ namespace WebApplication1
             BindArea(bind_City.SelectedItem.Value);
         }
 
-       
+        protected void companyname_TextChanged(object sender, EventArgs e)
+        {
 
+        }
     }
     }

@@ -15,7 +15,7 @@ namespace WebApplication1
         {
             if (Session["uid"] == null)
             {
-                Response.Redirect("../system/login.aspx", false);
+                Response.Redirect("../login.aspx", false);
                 return;
             }
 
@@ -72,7 +72,7 @@ namespace WebApplication1
                 string strcmd = "update competition set text=?text  where competitionname=?competitionname";
                 MySqlCommand cmd = new MySqlCommand(strcmd, con);
                 cmd.Parameters.AddWithValue("?text", HttpUtility.HtmlEncode(FCKeditor1.Value));
-                cmd.Parameters.AddWithValue("?competitionname", Session["uid"]);
+                cmd.Parameters.AddWithValue("?competitionname", Session["competitionname"]);
                 int i = cmd.ExecuteNonQuery();
                 Response.Redirect("launch5.aspx");
             }

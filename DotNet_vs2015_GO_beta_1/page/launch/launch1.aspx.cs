@@ -12,7 +12,7 @@ namespace WebApplication1
         {
             if (Session["uid"] == null)
             {
-                Response.Redirect("../system/login.aspx", false);
+                Response.Redirect("../login.aspx", false);
                 return;
             }
         }

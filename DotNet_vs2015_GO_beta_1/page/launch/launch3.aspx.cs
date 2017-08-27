@@ -17,7 +17,7 @@ namespace WebApplication1
         {
             if (Session["uid"] == null)
             {
-                Response.Redirect("../system/login.aspx", false);
+                Response.Redirect("../login.aspx", false);
                 return;
             }
 
@@ -85,13 +85,21 @@ namespace WebApplication1
         {
             DateTime date1 = Convert.ToDateTime(this.starttime.Text);
             DateTime date2 = Convert.ToDateTime(this.endtime.Text);
+            DateTime date3 = Convert.ToDateTime(this.signupstarttime.Text);
+            DateTime date4 = Convert.ToDateTime(this.ddl.Text);
             if (date1> date2)
+            {
+                Response.Write("<script>alert('结束时间不应早于开始时间')</script>");
+                return false;
+            }
+            if (date3 > date4)
             {
                 Response.Write("<script>alert('结束时间不应早于开始时间')</script>");
                 return false;
             }
             return true;
         }
+      
 
         private string GenerateId()
         {

@@ -86,7 +86,7 @@
             <tr>
                 <td class="auto-style6"></td>
                 <td class="auto-style9">
-                    <img class="auto-style5" src="../images/launch.jpg" /></td>
+                    <img class="auto-style5" src="../../images/launch.jpg" /></td>
                 <td class="auto-style3"></td>
             </tr>
             <tr>

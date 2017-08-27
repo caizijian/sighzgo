@@ -89,13 +89,22 @@ public class global{
 
     public static MySqlDataReader CompetitionInfo(String id)
     {
+        //显示比赛详情
         //加判断输入+是否存在
         string sql = "select * from competition where id=?id";
         MySqlParameter[] p ={
         new MySqlParameter("?id",id) };
         return mysqlHelp.ExecuteReader(sql, p);
     }
-    
+    public static MySqlDataReader com_hostInfo(String competition_id)
+    {//通过赛事寻找主办方
+     //加判断输入+是否存在
+        string sql = "select * from launchcompetition where competition_id=?competition_id";
+        MySqlParameter[] p ={
+        new MySqlParameter("?competition_id",competition_id) };
+        return mysqlHelp.ExecuteReader(sql, p);
+    }
+
     public static MySqlDataReader HostInfo(int id)
     {//显示主办方个人信息
      //加判断输入+是否存在
@@ -221,15 +230,31 @@ public class global{
        return(mysqlHelp.ExecuteNonQuery(sql, p)) ;
     }
 
+    public static DataTable ShowAllCompetition()
+    {
+        string sql = "select * from competition";
+        return(mysqlHelp.ExecuteDataTable(sql));
+
+
+    }
+
+
+    public static int isTeamnameExist(string competition_id,string teamname)
+    {//显示参赛者信息    
+        string sql = "SELECT * FROM competition,team,takepartin WHERE competition.id=takepartin.competition_id AND team.id=takepartin.team_id AND teamname=?teamname AND competition.id=?competition.id";
+        MySqlParameter[] p ={
+         new MySqlParameter("?competition.id",competition_id),
+          new MySqlParameter("?teamname",teamname)
+        };
+        if (mysqlHelp.ExecuteScalar(sql, p) == null) return 0;
+        return 1;
+    }
+
+
+
 
 
 }
-
-
-
-
-
-
 
 
 

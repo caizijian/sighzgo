@@ -99,7 +99,7 @@
             <tr>
                 <td class="auto-style6"></td>
                 <td class="auto-style9">
-                    <img class="auto-style5" src="../images/launch.jpg" /></td>
+                    <img class="auto-style5" src="../../images/launch.jpg" /></td>
                 <td class="auto-style3"></td>
             </tr>
             <tr>
@@ -120,7 +120,7 @@
                       <tr>
                             <td class="auto-style13">&nbsp;</td>
                             <td>
-                                <asp:TextBox ID="companyname" runat="server" Height="20px" Width="222px" Placeholder="公司/社会团体/学生社团名称等"></asp:TextBox>
+                                <asp:TextBox ID="companyname" runat="server" Height="20px" Width="222px" Placeholder="公司/社会团体/学生社团名称等" ></asp:TextBox>
                             </td>
                         </tr>
                          <tr>
@@ -163,9 +163,9 @@
                                 <asp:Label ID="Label3" runat="server" ForeColor="Red" Text="*"></asp:Label>
                                 联系电话：</td>
                             <td class="auto-style17">
-                                <asp:TextBox ID="telephone" runat="server" Height="20px" Width="200px" OnTextChanged="telephone_TextChanged" MaxLength="11" ></asp:TextBox>
+                                <asp:TextBox ID="telephone" runat="server" Height="20px" Width="200px"  MaxLength="11" ></asp:TextBox>
                             &nbsp;
-                                <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="telephone" ErrorMessage="电话错误" ValidationExpression="^[1]\d{10}| |^\+?[1-9][0-9]*$| |^(0[0-9]{2,3}\-)?([2-9][0-9]{6,7})+(\-[0-9]{1,4})?$"></asp:RegularExpressionValidator>
+                                <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server"  ErrorMessage="电话错误" ValidationExpression="^[1]\d{10}| |^\+?[1-9][0-9]*$| |^(0[0-9]{2,3}\-)?([2-9][0-9]{6,7})+(\-[0-9]{1,4})?$" ControlToValidate="telephone"></asp:RegularExpressionValidator>
                             </td>
                         </tr>
                         <tr>
@@ -173,7 +173,7 @@
                                 <asp:Label ID="Label4" runat="server" ForeColor="Red" Text="*"></asp:Label>
                                 邮箱：</td>
                             <td class="auto-style19">
-                                <asp:TextBox ID="email" runat="server" Height="20px" Width="202px" OnTextChanged="email_TextChanged" TextMode="Email" ></asp:TextBox>
+                                <asp:TextBox ID="email" runat="server" Height="20px" Width="202px"  TextMode="Email" ></asp:TextBox>
                             </td>
                         </tr>
                         <tr>

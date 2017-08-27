@@ -13,14 +13,14 @@ namespace WebApplication1
         {
             if (Session["uid"] == null)
             {
-                Response.Redirect("../system/login.aspx", false);
+                Response.Redirect("../login.aspx", false);
                 return;
             }
 
         }
         protected void Button1_Click(object sender, System.EventArgs e)
         {
-            Response.Redirect("../system/Home.html", false);
+            Response.Redirect("../Home.html", false);
             return;
         }
     }
