@@ -20,7 +20,7 @@ namespace WebApplication1
     {
         private void BindProvince()    //绑定省市县的三个下拉菜单
         {
-            string str = "Server=10.10.11.108;User ID=root;Password=GNzhengxun11;Database=sighzgo;CharSet=utf8;";
+            string str = "Server=118.89.38.11;User ID=root;Password=sightzgo1110/*-;Database=sighzgo;CharSet=utf8;";
             MySqlConnection con = new MySqlConnection(str);//实例化链接
             string strcmd = "select provinceid,province from provinces";
             MySqlDataAdapter myda = new MySqlDataAdapter(strcmd, con);
@@ -38,7 +38,7 @@ namespace WebApplication1
         {
             string sql = "select cityid,city from cities where provinceid='" + code + "'";
             //省份和城市进行关联
-            string str = "Server=10.10.11.108;User ID=root;Password=GNzhengxun11;Database=sighzgo;CharSet=utf8;";
+            string str = "Server=118.89.38.11;User ID=root;Password=sightzgo1110/*-;Database=sighzgo;CharSet=utf8;";
             MySqlConnection con = new MySqlConnection(str);//实例化链接
             MySqlDataAdapter myda = new MySqlDataAdapter(sql, con);
             DataSet ds = new DataSet();
@@ -54,7 +54,7 @@ namespace WebApplication1
         {
             string sql = "select areaid,area from areas where cityid='" + code + "'";
             //省份和城市进行关联
-            string str = "Server=10.10.11.108;User ID=root;Password=GNzhengxun11;Database=sighzgo;CharSet=utf8;";
+            string str = "Server=118.89.38.11;User ID=root;Password=sightzgo1110/*-;Database=sighzgo;CharSet=utf8;";
             MySqlConnection con = new MySqlConnection(str);//实例化链接
             MySqlDataAdapter myda = new MySqlDataAdapter(sql, con);
             DataSet ds = new DataSet();
@@ -175,7 +175,7 @@ namespace WebApplication1
         {
             if (check(companyname.Text, managername.Text,telephone.Text,email.Text))
             {
-                string str = "Server=10.10.11.108;User ID=root;Password=GNzhengxun11;Database=sighzgo;CharSet=utf8;";
+                string str = "Server=118.89.38.11;User ID=root;Password=sightzgo1110/*-;Database=sighzgo;CharSet=utf8;";
                         MySqlConnection con = new MySqlConnection(str);//实例化链接
                         con.Open();   //开启连接   
                         string strcmd = "update host set companyname=?companyname,managername=?managername,telephone=?telephone,email=?email,wechat=?wechat,province=?province,city=?city,district=?district where id=?id";
@@ -218,7 +218,7 @@ namespace WebApplication1
 
         protected void ddlProvince_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string str = "Server=10.10.11.108;User ID=root;Password=GNzhengxun11;Database=sighzgo;CharSet=utf8;";
+            string str = "Server=118.89.38.11;User ID=root;Password=sightzgo1110/*-;Database=sighzgo;CharSet=utf8;";
             MySqlConnection con = new MySqlConnection(str);//实例化链接
             con.Open();    //开启连接  
         }

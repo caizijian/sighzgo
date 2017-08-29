@@ -14,7 +14,7 @@ namespace DotNet_vs2015_GO_beta_1.system
         
         protected void Page_Load(object sender, EventArgs e)
         {
-            string str = "Server=10.10.11.108;User ID=root;Password=GNzhengxun11;Database=sighzgo;CharSet=utf8;";
+            string str = "Server=118.89.38.11;User ID=root;Password=sightzgo1110/*-;Database=sighzgo;CharSet=utf8;";
             MySqlConnection con = new MySqlConnection(str);//实例化链接
             string strcmd = "select team_id as 团队编号,number as 数量,date as 日期 from works";//"select * from works";//
             con.Open();//开启连接

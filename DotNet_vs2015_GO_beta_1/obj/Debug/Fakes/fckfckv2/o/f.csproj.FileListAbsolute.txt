@@ -1,0 +1,13 @@
+D:\0SZG\gitnew\08271018\sighzgo - 副本\DotNet_vs2015_GO_beta_1\obj\Debug\Fakes\fckfckv2\b\FredCK.FCKeditorV2.Fakes.xml
+D:\0SZG\gitnew\08271018\sighzgo - 副本\DotNet_vs2015_GO_beta_1\obj\Debug\Fakes\fckfckv2\b\FredCK.FCKeditorV2.Fakes.dll
+D:\0SZG\gitnew\08271018\sighzgo - 副本\DotNet_vs2015_GO_beta_1\obj\Debug\Fakes\fckfckv2\b\FredCK.FCKeditorV2.Fakes.pdb
+D:\0SZG\gitnew\08271018\sighzgo - 副本\DotNet_vs2015_GO_beta_1\obj\Debug\Fakes\fckfckv2\b\FredCK.FCKeditorV2.dll
+D:\0SZG\gitnew\08271018\sighzgo - 副本\DotNet_vs2015_GO_beta_1\obj\Debug\Fakes\fckfckv2\b\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\0SZG\gitnew\08271018\sighzgo - 副本\DotNet_vs2015_GO_beta_1\obj\Debug\Fakes\fckfckv2\b\Microsoft.QualityTools.Testing.Fakes.dll
+D:\0SZG\gitnew\08271018\sighzgo - 副本\DotNet_vs2015_GO_beta_1\obj\Debug\Fakes\fckfckv2\b\MySql.Data.dll
+D:\0SZG\gitnew\08271018\sighzgo - 副本\DotNet_vs2015_GO_beta_1\obj\Debug\Fakes\fckfckv2\b\System.Windows.Forms.dll
+D:\0SZG\gitnew\08271018\sighzgo - 副本\DotNet_vs2015_GO_beta_1\obj\Debug\Fakes\fckfckv2\b\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\0SZG\gitnew\08271018\sighzgo - 副本\DotNet_vs2015_GO_beta_1\obj\Debug\Fakes\fckfckv2\b\zh-Hans\Microsoft.QualityTools.Testing.Fakes.resources.dll
+D:\0SZG\gitnew\08271018\sighzgo - 副本\DotNet_vs2015_GO_beta_1\obj\Debug\Fakes\fckfckv2\o\f.csprojResolveAssemblyReference.cache
+D:\0SZG\gitnew\08271018\sighzgo - 副本\DotNet_vs2015_GO_beta_1\obj\Debug\Fakes\fckfckv2\o\FredCK.FCKeditorV2.Fakes.dll
+D:\0SZG\gitnew\08271018\sighzgo - 副本\DotNet_vs2015_GO_beta_1\obj\Debug\Fakes\fckfckv2\o\FredCK.FCKeditorV2.Fakes.pdb

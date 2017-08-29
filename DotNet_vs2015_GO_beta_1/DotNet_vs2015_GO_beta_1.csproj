@@ -439,6 +439,7 @@
     <Content Include="js\tab.js" />
     <Content Include="page\competition\uglyallgame.aspx" />
     <Content Include="page\competition\upload.aspx" />
+    <Content Include="page\Home.html" />
     <Content Include="page\launch\launch1.aspx" />
     <Content Include="page\launch\launch2.aspx" />
     <Content Include="page\launch\launch3.aspx" />
@@ -457,6 +458,7 @@
     <Content Include="fckeditor\editor\dialog\fck_spellerpages\spellerpages\server-scripts\spellchecker.cfm" />
     <Content Include="fckeditor\editor\dialog\fck_spellerpages\spellerpages\server-scripts\spellchecker.php" />
     <Content Include="fckeditor\editor\dialog\fck_spellerpages\spellerpages\server-scripts\spellchecker.pl" />
+    <None Include="Properties\PublishProfiles\sightzgo.pubxml" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

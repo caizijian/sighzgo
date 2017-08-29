@@ -40,7 +40,7 @@ public class mysqlHelp
     
     public static int ExecuteNonQuery(string SQLString)
     {//无需插入参数；增删改；返回影响行数
-        using (MySqlConnection connection = new MySqlConnection("Server=10.10.11.108;User ID=root;Password=GNzhengxun11;Database=sighzgo;CharSet=utf8;"))
+        using (MySqlConnection connection = new MySqlConnection("Server=118.89.38.11;User ID=root;Password=sightzgo1110/*-;Database=sighzgo;CharSet=utf8;"))
         {
             using (MySqlCommand cmd = new MySqlCommand(SQLString, connection))
             {
@@ -63,7 +63,7 @@ public class mysqlHelp
     
     public static int ExecuteNonQuery(string SQLString, params MySqlParameter[] cmdParms)
     {//需要插入参数；增删改；返回影响行数
-        using (MySqlConnection connection = new MySqlConnection("Server=10.10.11.108;User ID=root;Password=GNzhengxun11;Database=sighzgo;CharSet=utf8;"))
+        using (MySqlConnection connection = new MySqlConnection("Server=118.89.38.11;User ID=root;Password=sightzgo1110/*-;Database=sighzgo;CharSet=utf8;"))
         {
             using (MySqlCommand cmd = new MySqlCommand())
             {
@@ -88,7 +88,7 @@ public class mysqlHelp
   
     public static object ExecuteScalar(string SQLString)
     {//查询，返回第一行第一例
-        using (MySqlConnection connection = new MySqlConnection("Server=10.10.11.108;User ID=root;Password=GNzhengxun11;Database=sighzgo;CharSet=utf8;"))
+        using (MySqlConnection connection = new MySqlConnection("Server=118.89.38.11;User ID=root;Password=sightzgo1110/*-;Database=sighzgo;CharSet=utf8;"))
         {
             using (MySqlCommand cmd = new MySqlCommand(SQLString, connection))
             {
@@ -117,7 +117,7 @@ public class mysqlHelp
 
     public static object ExecuteScalar(string SQLString, params MySqlParameter[] cmdParms)
     {
-        using (MySqlConnection connection = new MySqlConnection("Server=10.10.11.108;User ID=root;Password=GNzhengxun11;Database=sighzgo;CharSet=utf8;"))
+        using (MySqlConnection connection = new MySqlConnection("Server=118.89.38.11;User ID=root;Password=sightzgo1110/*-;Database=sighzgo;CharSet=utf8;"))
         {
             using (MySqlCommand cmd = new MySqlCommand())
             {
@@ -148,7 +148,7 @@ public class mysqlHelp
 
     public static MySqlDataReader ExecuteReader(string strSQL)
     {//查询，返回第一行
-        MySqlConnection connection = new MySqlConnection("Server=10.10.11.108;User ID=root;Password=GNzhengxun11;Database=sighzgo;CharSet=utf8;");
+        MySqlConnection connection = new MySqlConnection("Server=118.89.38.11;User ID=root;Password=sightzgo1110/*-;Database=sighzgo;CharSet=utf8;");
         MySqlCommand cmd = new MySqlCommand(strSQL, connection);
         MySqlDataReader myReader = null;
         try
@@ -169,7 +169,7 @@ public class mysqlHelp
     }
     public static MySqlDataReader ExecuteReader(string SQLString, params MySqlParameter[] cmdParms)
     {
-        MySqlConnection connection = new MySqlConnection("Server=10.10.11.108;User ID=root;Password=GNzhengxun11;Database=sighzgo;CharSet=utf8;");
+        MySqlConnection connection = new MySqlConnection("Server=118.89.38.11;User ID=root;Password=sightzgo1110/*-;Database=sighzgo;CharSet=utf8;");
         MySqlCommand cmd = new MySqlCommand();
         MySqlDataReader myReader = null;
       
@@ -194,7 +194,7 @@ public class mysqlHelp
 
     public static DataTable ExecuteDataTable(string SQLString)
     {//查询，返回一个表
-        using (MySqlConnection connection = new MySqlConnection("Server=10.10.11.108;User ID=root;Password=GNzhengxun11;Database=sighzgo;CharSet=utf8;"))
+        using (MySqlConnection connection = new MySqlConnection("Server=118.89.38.11;User ID=root;Password=sightzgo1110/*-;Database=sighzgo;CharSet=utf8;"))
         {
             DataSet ds = new DataSet();
             try
@@ -215,7 +215,7 @@ public class mysqlHelp
 
     public static DataTable ExecuteDataTable(string SQLString, params MySqlParameter[] cmdParms)
     {
-        using (MySqlConnection connection = new MySqlConnection("Server=10.10.11.108;User ID=root;Password=GNzhengxun11;Database=sighzgo;CharSet=utf8;"))
+        using (MySqlConnection connection = new MySqlConnection("Server=118.89.38.11;User ID=root;Password=sightzgo1110/*-;Database=sighzgo;CharSet=utf8;"))
         {
             MySqlCommand cmd = new MySqlCommand();
             PrepareCommand(cmd, connection, null, SQLString, cmdParms);

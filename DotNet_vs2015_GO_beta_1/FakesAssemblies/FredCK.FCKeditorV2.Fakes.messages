@@ -1,8 +1,8 @@
-D:\0SZG\gitnew\08271004\sighzgo\DotNet_vs2015_GO_beta_1\Fakes\FredCK.FCKeditorV2.fakes : warning : 无法为 FredCK.FCKeditorV2.FileBrowser.XmlResponseHandler 生成存根: 类型对 exported or assembly(FredCK.FCKeditorV2.Fakes) 不可见。
-D:\0SZG\gitnew\08271004\sighzgo\DotNet_vs2015_GO_beta_1\Fakes\FredCK.FCKeditorV2.fakes : warning : 无法为 FredCK.FCKeditorV2.Util 生成存根: 类型已密封。
-D:\0SZG\gitnew\08271004\sighzgo\DotNet_vs2015_GO_beta_1\Fakes\FredCK.FCKeditorV2.fakes : warning : 无法为 FredCK.FCKeditorV2.LanguageDirection 生成存根: 类型是一个值类型。
-D:\0SZG\gitnew\08271004\sighzgo\DotNet_vs2015_GO_beta_1\Fakes\FredCK.FCKeditorV2.fakes : warning : 无法为 FredCK.FCKeditorV2.XmlUtil 生成存根: 类型已密封。
-D:\0SZG\gitnew\08271004\sighzgo\DotNet_vs2015_GO_beta_1\Fakes\FredCK.FCKeditorV2.fakes : warning : 无法为 FredCK.FCKeditorV2.FileBrowser.XmlResponseHandler 生成填充码: 类型对 exported or assembly(FredCK.FCKeditorV2.Fakes) 不可见。
-D:\0SZG\gitnew\08271004\sighzgo\DotNet_vs2015_GO_beta_1\Fakes\FredCK.FCKeditorV2.fakes : warning : 无法为 FredCK.FCKeditorV2.Util 生成填充码: 类型对 exported or assembly(FredCK.FCKeditorV2.Fakes) 不可见。
-D:\0SZG\gitnew\08271004\sighzgo\DotNet_vs2015_GO_beta_1\Fakes\FredCK.FCKeditorV2.fakes : warning : 无法为 FredCK.FCKeditorV2.LanguageDirection 生成填充码: 类型是一个枚举。
-D:\0SZG\gitnew\08271004\sighzgo\DotNet_vs2015_GO_beta_1\Fakes\FredCK.FCKeditorV2.fakes : warning : 无法为 FredCK.FCKeditorV2.XmlUtil 生成填充码: 类型对 exported or assembly(FredCK.FCKeditorV2.Fakes) 不可见。
+D:\0SZG\gitnew\08271018\sighzgo - 副本\DotNet_vs2015_GO_beta_1\Fakes\FredCK.FCKeditorV2.fakes : warning : 无法为 FredCK.FCKeditorV2.FileBrowser.XmlResponseHandler 生成存根: 类型对 exported or assembly(FredCK.FCKeditorV2.Fakes) 不可见。
+D:\0SZG\gitnew\08271018\sighzgo - 副本\DotNet_vs2015_GO_beta_1\Fakes\FredCK.FCKeditorV2.fakes : warning : 无法为 FredCK.FCKeditorV2.Util 生成存根: 类型已密封。
+D:\0SZG\gitnew\08271018\sighzgo - 副本\DotNet_vs2015_GO_beta_1\Fakes\FredCK.FCKeditorV2.fakes : warning : 无法为 FredCK.FCKeditorV2.LanguageDirection 生成存根: 类型是一个值类型。
+D:\0SZG\gitnew\08271018\sighzgo - 副本\DotNet_vs2015_GO_beta_1\Fakes\FredCK.FCKeditorV2.fakes : warning : 无法为 FredCK.FCKeditorV2.XmlUtil 生成存根: 类型已密封。
+D:\0SZG\gitnew\08271018\sighzgo - 副本\DotNet_vs2015_GO_beta_1\Fakes\FredCK.FCKeditorV2.fakes : warning : 无法为 FredCK.FCKeditorV2.FileBrowser.XmlResponseHandler 生成填充码: 类型对 exported or assembly(FredCK.FCKeditorV2.Fakes) 不可见。
+D:\0SZG\gitnew\08271018\sighzgo - 副本\DotNet_vs2015_GO_beta_1\Fakes\FredCK.FCKeditorV2.fakes : warning : 无法为 FredCK.FCKeditorV2.Util 生成填充码: 类型对 exported or assembly(FredCK.FCKeditorV2.Fakes) 不可见。
+D:\0SZG\gitnew\08271018\sighzgo - 副本\DotNet_vs2015_GO_beta_1\Fakes\FredCK.FCKeditorV2.fakes : warning : 无法为 FredCK.FCKeditorV2.LanguageDirection 生成填充码: 类型是一个枚举。
+D:\0SZG\gitnew\08271018\sighzgo - 副本\DotNet_vs2015_GO_beta_1\Fakes\FredCK.FCKeditorV2.fakes : warning : 无法为 FredCK.FCKeditorV2.XmlUtil 生成填充码: 类型对 exported or assembly(FredCK.FCKeditorV2.Fakes) 不可见。

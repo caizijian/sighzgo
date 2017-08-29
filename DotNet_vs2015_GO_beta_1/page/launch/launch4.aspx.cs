@@ -66,7 +66,7 @@ namespace WebApplication1
         {
             if (check(FCKeditor1.Value))
             {
-                string str = "Server=10.10.11.108;User ID=root;Password=GNzhengxun11;Database=sighzgo;CharSet=utf8;";
+                string str = "Server=118.89.38.11;User ID=root;Password=sightzgo1110/*-;Database=sighzgo;CharSet=utf8;";
                 MySqlConnection con = new MySqlConnection(str);//实例化链接
                 con.Open();
                 string strcmd = "update competition set text=?text  where competitionname=?competitionname";
