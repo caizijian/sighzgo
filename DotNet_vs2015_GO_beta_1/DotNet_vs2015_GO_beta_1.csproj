@@ -497,7 +497,9 @@
     <Content Include="page\signup.aspx" />
     <Content Include="page\manage\test.aspx" />
     <None Include="Web References\localhost\EamilService.disco" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="page\global\global.cs" />
