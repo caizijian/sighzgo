@@ -5,22 +5,12 @@
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title></title>
-    <style type="text/css">
-        .texttitle {
-            font-size: 14px;
-            font-weight: bolder;
-            color: #909090;
-        }
-    </style>
+
 </head>
 <body>
     <form id="form1" runat="server">
         <div>
-            <asp:DataList ID="DataList1" runat="server"  style="TABLE-LAYOUT: fixed" CellPadding="2" CellSpacing="2" BorderStyle="Inset" BackColor="White" Width="100%" HeaderStyle-Font-Names="Verdana" HeaderStyle-Font-Size="12pt" HeaderStyle-HorizontalAlign="center" HeaderStyle-Font-Bold="True" ItemStyle-BackColor="#000000" ItemStyle-ForeColor="#002d54" FooterStyle-Font-Size="9pt" FooterStyle-Font-Italic="True" BorderColor="Black" Font-Bold="False" Font-Italic="False" Font-Overline="False" Font-Strikeout="False" Font-Underline="False" BorderWidth="10px" CssClass="auto-style1" OnSelectedIndexChanged="DataList1_SelectedIndexChanged">
-<FooterStyle Font-Italic="True" Font-Size="9pt"></FooterStyle>
-
-<HeaderStyle HorizontalAlign="Center" Font-Bold="True" Font-Names="Verdana" Font-Size="12pt"></HeaderStyle>
-
+            <asp:DataList ID="DataList1" runat="server"  style="TABLE-LAYOUT: fixed" Width="100%" >
 <ItemStyle BackColor="White" ForeColor="Black"></ItemStyle>
                 <ItemTemplate>
                     <tr >
@@ -49,17 +39,10 @@
                      <tr>
                         <td style="width:150px;">  比赛时间</td>
                         <td style="width:150px;"> <asp:Label ID="Label6" runat="server" Text='<%# Eval("starttime") %>'></asp:Label>--<asp:Label ID="Label8" runat="server" Text='<%# Eval("endtime") %>'></asp:Label></td>               
-                     </tr>
-                
-                
-                
-                </ItemTemplate>
-               
-                <SeparatorStyle BackColor="#33CC33" Font-Bold="False" Font-Italic="False" Font-Overline="False" Font-Strikeout="False" Font-Underline="True" ForeColor="#993366" />
-               
+                     </tr>     
+                </ItemTemplate>            
             </asp:DataList>
-        </div>
-        
+        </div>        
     </form>
 </body>
 </html>
