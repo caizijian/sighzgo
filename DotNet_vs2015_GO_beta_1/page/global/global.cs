@@ -220,7 +220,7 @@ public class global
 
     public static DataTable ShowAllCompetition()
     {
-        string sql = "select * from competition";
+        string sql = "SELECT * FROM competition,competitionstatus,launchcompetition,host,competitionlevel WHERE competition.id = launchcompetition.`competition_id`AND host.`id`= launchcompetition.`host_id` AND competition.status=competitionstatus.id";
         return (mysqlHelp.ExecuteDataTable(sql));
     }
 

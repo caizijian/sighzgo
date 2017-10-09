@@ -15,16 +15,20 @@ namespace DotNet_vs2015_GO_beta_1
             if (!IsPostBack) { showallcompetition(); }
         }
         protected void showallcompetition()
-        {//显示该队目前的队员组成情况
+        {
             DataTable table = global.ShowAllCompetition();
-            DataList1.DataSource = table;
-       
+            DataList1.DataSource = table;     
             DataList1.DataBind();
         }
 
         protected void DataList1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Game_details.aspx");
         }
     }
 }
