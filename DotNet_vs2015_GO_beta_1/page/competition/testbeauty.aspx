@@ -13,13 +13,13 @@
             <asp:DataList ID="DataList1" runat="server"  style="TABLE-LAYOUT: fixed" Width="100%" >
 <ItemStyle BackColor="White" ForeColor="Black"></ItemStyle>
                 <ItemTemplate>
+                    <div>
                     <tr >
                         <td style="width:150px;">
                             <asp:Label ID="Label1" runat="server" Text='<%# Eval("content") %>' ></asp:Label></td>
                         <td style="width:150px;text-overflow:ellipsis; white-space:nowrap;overflow:hidden;">
                             <asp:Label ID="Label2" runat="server" Text='<%# Eval("competitionname") %>' ></asp:Label></td>
-                        <td style="width:100px;"><asp:Button ID="Button1" runat="server" Text="点击报名" OnClick="Button1_Click" /></td>
-                            
+                        <td style="width:100px;"><asp:Button ID="Button1" runat="server" Text="点击报名" OnClick="Button1_Click" /></td>                           
                     </tr>
                     <tr >
                         <td style="width:150px;">主办方名称:</td>
@@ -39,7 +39,9 @@
                      <tr>
                         <td style="width:150px;">  比赛时间</td>
                         <td style="width:150px;"> <asp:Label ID="Label6" runat="server" Text='<%# Eval("starttime") %>'></asp:Label>--<asp:Label ID="Label8" runat="server" Text='<%# Eval("endtime") %>'></asp:Label></td>               
-                     </tr>     
+                     </tr>  
+                       <hr> 
+                        </div> 
                 </ItemTemplate>            
             </asp:DataList>
         </div>        

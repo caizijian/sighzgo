@@ -272,9 +272,39 @@ public class global
 
     }
 
+    public static int FindVoteId(string id)
+    {
+        //查找投票码是否存在,存在返回1，不存在返回0；
+        string sql = "select * from vote where id=?id";
+        MySqlParameter[] p ={
+        new MySqlParameter("?id",id) };
+        if (mysqlHelp.ExecuteScalar(sql, p) == null) return 0;
+        return 1;
+    }
 
+    public static int IfHadVote(string id)
+    {
+        //查找投票码是否存在,存在返回1，不存在返回0；
+        string sql = "select team from vote where id=?id";
+        MySqlParameter[] p ={
+        new MySqlParameter("?id",id) };
+        if ((string)mysqlHelp.ExecuteScalar(sql, p) == "0") return 0;
+        else return 1;
+    }
 
-}
+    public static int Vote(string id, string team)
+    {
+        DateTime datetime = GetDateTime();
+        string sql = "update vote set team=?team,datetime=?datetime where id=?id";
+        MySqlParameter[] p ={
+         new MySqlParameter("?id",id),
+         new MySqlParameter("?team",team),
+         new MySqlParameter("?datetime",datetime),
+        };
+        return (mysqlHelp.ExecuteNonQuery(sql, p));
+    }
+
+    }
 
 
 
