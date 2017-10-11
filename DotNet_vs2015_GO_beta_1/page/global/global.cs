@@ -103,6 +103,15 @@ public class global
         return mysqlHelp.ExecuteReader(sql, p);
     }
 
+    public static Int64 VoteInfo(int team)
+    {//显示投票数据
+        string sql = "select count(*) from vote where team=?team";
+        MySqlParameter[] p ={
+        new MySqlParameter("?team",team) };
+        if (mysqlHelp.ExecuteScalar(sql, p) == null) return 0;
+        return (Int64)mysqlHelp.ExecuteScalar(sql, p);
+    }
+
     public static int isParticipantInfoExist(int id)
     {//显示参赛者信息    
         string sql = "select * from participant where id=?id";
