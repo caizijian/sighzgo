@@ -11,7 +11,7 @@
     <form id="form1" runat="server">
     <div>
     请输入序列号：
-        <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox><br />
+        <asp:TextBox ID="TextBox1" runat="server" MaxLength="4"></asp:TextBox><br />
     
         <asp:DropDownList ID="DropDownList1" runat="server">
             <asp:ListItem Value="1">队伍1</asp:ListItem>
