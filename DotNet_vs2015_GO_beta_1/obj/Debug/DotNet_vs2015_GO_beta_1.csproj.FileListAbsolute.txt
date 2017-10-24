@@ -91,3 +91,26 @@ D:\development\0SZG\gitnew\新建文件夹 (3)\sighzgo\DotNet_vs2015_GO_beta_1\b
 D:\development\0SZG\gitnew\新建文件夹 (3)\sighzgo\DotNet_vs2015_GO_beta_1\obj\Debug\DotNet_vs2015_GO_beta_1.csprojResolveAssemblyReference.cache
 D:\development\0SZG\gitnew\新建文件夹 (3)\sighzgo\DotNet_vs2015_GO_beta_1\obj\Debug\DotNet_vs2015_GO_beta_1.dll
 D:\development\0SZG\gitnew\新建文件夹 (3)\sighzgo\DotNet_vs2015_GO_beta_1\obj\Debug\DotNet_vs2015_GO_beta_1.pdb
+D:\development\0SZG\gitnew\10211834\sighzgo\DotNet_vs2015_GO_beta_1\bin\roslyn\csc.exe
+D:\development\0SZG\gitnew\10211834\sighzgo\DotNet_vs2015_GO_beta_1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\development\0SZG\gitnew\10211834\sighzgo\DotNet_vs2015_GO_beta_1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\development\0SZG\gitnew\10211834\sighzgo\DotNet_vs2015_GO_beta_1\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\development\0SZG\gitnew\10211834\sighzgo\DotNet_vs2015_GO_beta_1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\development\0SZG\gitnew\10211834\sighzgo\DotNet_vs2015_GO_beta_1\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\development\0SZG\gitnew\10211834\sighzgo\DotNet_vs2015_GO_beta_1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\development\0SZG\gitnew\10211834\sighzgo\DotNet_vs2015_GO_beta_1\bin\roslyn\System.Collections.Immutable.dll
+D:\development\0SZG\gitnew\10211834\sighzgo\DotNet_vs2015_GO_beta_1\bin\roslyn\System.Reflection.Metadata.dll
+D:\development\0SZG\gitnew\10211834\sighzgo\DotNet_vs2015_GO_beta_1\bin\roslyn\vbc.exe
+D:\development\0SZG\gitnew\10211834\sighzgo\DotNet_vs2015_GO_beta_1\bin\roslyn\VBCSCompiler.exe
+D:\development\0SZG\gitnew\10211834\sighzgo\DotNet_vs2015_GO_beta_1\bin\roslyn\VBCSCompiler.exe.config
+D:\development\0SZG\gitnew\10211834\sighzgo\DotNet_vs2015_GO_beta_1\bin\DotNet_vs2015_GO_beta_1.dll.config
+D:\development\0SZG\gitnew\10211834\sighzgo\DotNet_vs2015_GO_beta_1\bin\DotNet_vs2015_GO_beta_1.dll
+D:\development\0SZG\gitnew\10211834\sighzgo\DotNet_vs2015_GO_beta_1\bin\DotNet_vs2015_GO_beta_1.pdb
+D:\development\0SZG\gitnew\10211834\sighzgo\DotNet_vs2015_GO_beta_1\bin\FredCK.FCKeditorV2.dll
+D:\development\0SZG\gitnew\10211834\sighzgo\DotNet_vs2015_GO_beta_1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\development\0SZG\gitnew\10211834\sighzgo\DotNet_vs2015_GO_beta_1\bin\MySql.Data.dll
+D:\development\0SZG\gitnew\10211834\sighzgo\DotNet_vs2015_GO_beta_1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\development\0SZG\gitnew\10211834\sighzgo\DotNet_vs2015_GO_beta_1\bin\zh-Hans\Microsoft.QualityTools.Testing.Fakes.resources.dll
+D:\development\0SZG\gitnew\10211834\sighzgo\DotNet_vs2015_GO_beta_1\obj\Debug\DotNet_vs2015_GO_beta_1.csprojResolveAssemblyReference.cache
+D:\development\0SZG\gitnew\10211834\sighzgo\DotNet_vs2015_GO_beta_1\obj\Debug\DotNet_vs2015_GO_beta_1.dll
+D:\development\0SZG\gitnew\10211834\sighzgo\DotNet_vs2015_GO_beta_1\obj\Debug\DotNet_vs2015_GO_beta_1.pdb

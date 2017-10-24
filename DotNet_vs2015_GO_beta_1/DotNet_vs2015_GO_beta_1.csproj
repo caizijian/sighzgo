@@ -451,8 +451,16 @@
     <Content Include="page\messagebox\newnotice.aspx" />
     <Content Include="page\my\edit_host.aspx" />
     <Content Include="page\my\readonly_host.aspx" />
+    <Content Include="page\vote\bg.png" />
+    <Content Include="page\vote\logo.png" />
     <Content Include="page\vote\show.aspx" />
+    <Content Include="page\vote\shows.aspx" />
+    <Content Include="page\vote\showvote.aspx" />
+    <Content Include="page\vote\stopvote.aspx" />
     <Content Include="page\vote\vote.aspx" />
+    <Content Include="page\vote\y1.png" />
+    <Content Include="page\vote\云.png" />
+    <Content Include="page\vote\插入数据.aspx" />
     <Content Include="Service References\ServiceReference1\DotNet_vs2015_GO_beta_1.ServiceReference1.SendMailMsgResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
@@ -625,12 +633,40 @@
     <Compile Include="page\vote\show.aspx.designer.cs">
       <DependentUpon>show.aspx</DependentUpon>
     </Compile>
+    <Compile Include="page\vote\shows.aspx.cs">
+      <DependentUpon>shows.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\vote\shows.aspx.designer.cs">
+      <DependentUpon>shows.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\vote\showvote.aspx.cs">
+      <DependentUpon>showvote.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\vote\showvote.aspx.designer.cs">
+      <DependentUpon>showvote.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\vote\stopvote.aspx.cs">
+      <DependentUpon>stopvote.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\vote\stopvote.aspx.designer.cs">
+      <DependentUpon>stopvote.aspx</DependentUpon>
+    </Compile>
     <Compile Include="page\vote\vote.aspx.cs">
       <DependentUpon>vote.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="page\vote\vote.aspx.designer.cs">
       <DependentUpon>vote.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page\vote\插入数据.aspx.cs">
+      <DependentUpon>插入数据.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="page\vote\插入数据.aspx.designer.cs">
+      <DependentUpon>插入数据.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
